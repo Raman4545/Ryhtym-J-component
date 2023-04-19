@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@200;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&family=Rubik+Moonrocks&display=swap');
+
+:root {
+    --main-color: #8e44ad;
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: .1rem solid var(--black);
+    --box-shadow: 0 .5em 1rem rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0.3);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/* Body style */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #313030;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Background div style */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login form style */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-form h1 {
+    margin-top: 0;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #3e8e41;
+}
+
+.login-error-message {
+    color: red;
+    display: none;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313030;
+    color: white;
+    height: 55px;
+    /* increase the height */
+    padding: 0 20px;
+    padding-left: 50px;
+    /* add some padding to the sides */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0 0 0 30rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* set the height to 100% to fill the navbar */
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.logout {
+    margin-left: auto;
+    color: white;
+        text-decoration: none;
+}
+
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.heading h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.links {
+    margin-top: 50px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 7rem;
+}
+
+.links .normal{
+    color: white;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+.links ul{
+    list-style-type: none;
+}
+
+.links .normal:hover {
+    color: #f2f2f2;
+}
+
+.premium {
+    color: gold;
+    display: block;
+    text-align: center;
+    margin-left: 0;
+     
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+    color: #cda57f;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.good-morning {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.card:nth-child(odd) {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card:nth-child(even) {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.background {
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 250px);
+    height: calc(100% - 75px);
+    background-image: url('cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 20px;
+
+}
+
+ .background .container {
+    min-height: 72vh;
+    
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    margin-bottom: 50px;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    overflow: hidden;
+    
+    
+}
+
+.background .bottom {
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background .bottom .icons {
+    margin-top: 14px;
+}
+
+.background .bottom .icons i {
+    cursor: pointer;
+}
+
+.background .bottom #myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
