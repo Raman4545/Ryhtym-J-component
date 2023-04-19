@@ -6,7 +6,7 @@ function login() {
     // Check if username and password are correct
     if (username === "user" && password === "name") {
         // Redirect to home page
-        window.location.href = "Home.html";
+        window.location.href = "index.html";
     } else {
         // Show login error message
         loginError.style.display = "block";
